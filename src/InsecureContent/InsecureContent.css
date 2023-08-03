@@ -11,7 +11,8 @@
     backdrop-filter: blur(10px);
     /* backdrop-filter: opacity(0.2); */
 }
-.displaynoalert{
+
+.displaynoalert {
     display: none;
 }
 
@@ -25,7 +26,7 @@
     margin-top: 15vh;
 }
 
-.alerttextboxinsecure{
+.alerttextboxinsecure {
     box-shadow: 0 0 20px black;
     width: 70vw;
     background-color: rgb(68, 68, 68);
@@ -33,12 +34,13 @@
     padding: 3vh 0.6vw;
     border-radius: 0.5vh;
 }
-.WarntxtboxInsecure2{
+
+.WarntxtboxInsecure2 {
     text-align: center;
     font-size: 2.5vh;
 }
 
-.WarntextInscuerecontent{
+.WarntextInscuerecontent {
     text-align: center;
     color: rgb(243, 77, 77);
     font-weight: bolder;
@@ -58,7 +60,8 @@
     border-radius: 0.5vh;
 
 }
-.insecurecontainertxt button:hover{
+
+.insecurecontainertxt button:hover {
     background-color: lime;
     color: black;
     box-shadow: 0 0 10px lime;
@@ -66,6 +69,29 @@
 
 
 
-.Insecuretxtans{
+.Insecuretxtans {
     font-size: 2.1vh;
+}
+
+.alerttextboxinsecure>a {
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    .insecurecontainertxt{
+        margin-top: 25vh;
+        font-size: 0.6vh;
+    }
+    .alerttextboxinsecure{
+        font-size: 1vh;
+    }
+    .WarntextInscuerecontent{
+        font-size: 2vh;
+    }
+    .WarntxtboxInsecure2{
+        font-size: 2vh;
+    }
+    .Insecuretxtans{
+        font-size: 1.5vh;
+    }
 }

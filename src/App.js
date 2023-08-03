@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import TaskList from './Components/TaskList';
 import "./Components/UpdateTask/UpdateTask.css"
-import InsecureContent from "./InsecureContent/InsecureContent"
+
 function App() {
 
 
@@ -17,6 +17,7 @@ function App() {
       <div className='TaskContainer'>
         <TaskList />
       </div>
+      <p className='NoteHere'><Link to="/note"> Note</Link></p>
     </div>
   );
 }

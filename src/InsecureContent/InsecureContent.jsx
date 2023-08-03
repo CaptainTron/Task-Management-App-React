@@ -1,12 +1,13 @@
 import { useState } from "react"
 import "./InsecureContent.css"
 import { AlertTriangle } from "lucide-react"
+import { Link } from 'react-router-dom';
 
 export default function InsecureContent() {
     const [IsEnabled, SetIsEnabled] = useState({
         IsOk: false
     })
-    
+
     return (
         <>
             <div className={`InsecureContent ${IsEnabled.IsOk ? "displaynoalert" : "Displayblur"}`}>
@@ -19,7 +20,7 @@ export default function InsecureContent() {
                             By enabling it, you will allow your browser to use API HTTP protocol in our website and nothing else.</span>
                         </p>
                         <p className="WarntxtboxInsecure2">Will it compromise my security ? <br /> <span className="Insecuretxtans">Absolutely not, this project is only for demonstration purpose.</span></p>
-                        <button onClick={(e) => SetIsEnabled((e) => ({ ...e, IsOk: true }))}>I Understand</button>
+                        <Link to="/"><button onClick={(e) => SetIsEnabled((e) => ({ ...e, IsOk: true }))}>I Understand</button></Link>
                     </div>
                 </div>
             </div>

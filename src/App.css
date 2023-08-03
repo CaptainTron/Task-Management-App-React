@@ -275,6 +275,16 @@ body {
     font-size: 1.6vh;
   }
 }
+.NoteHere{
+  text-align: center;
+}
+.NoteHere>a {
+  color: red;
+  margin: 0;
+  padding: 0;
+  /* text-decoration: none; */
+  text-underline-offset: 1vh;
+}
 
 /* After API */
 .FetchedDataContainer>a {
@@ -298,13 +308,14 @@ body {
   text-align: center;
   color: lime;
 }
-.notconnect{
+
+.notconnect {
   color: red;
   text-align: center;
 }
 
 /* Eoorr */
-.SomethingWentWrong{
+.SomethingWentWrong {
   display: flex;
   justify-content: center;
   align-items: center;

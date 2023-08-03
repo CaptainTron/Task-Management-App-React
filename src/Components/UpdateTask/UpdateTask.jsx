@@ -45,7 +45,7 @@ export default function UpdateTask() {
 
     async function Update() {
         try {
-            let res = await fetch(`http://localhost:5000/task?_id=${params.get("ID")}`, {
+            let res = await fetch(`http://Task-Management-env.eba-kpg8gsit.ap-south-1.elasticbeanstalk.com/task?_id=${params.get("ID")}`, {
                 method: "PATCH",
                 headers: { 'content-type': "application/json" },
                 body: JSON.stringify({

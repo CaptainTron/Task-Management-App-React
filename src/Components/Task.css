@@ -1,0 +1,69 @@
+.TasksContainer {
+    background-color: rgb(27, 24, 24);
+    padding: 1vh;
+    margin: 1vh 5vh 0 5vh;
+    font-size: 2.2vh;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.TasksContainer:hover {
+    box-shadow: 0 0 20px black;
+    scale: 1.01;
+}
+
+.TasksContainer p {
+    margin: 0.5vh;
+}
+
+.TasksContainer p:first-child {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vh;
+}
+
+.taskID {
+    font-size: 2vh;
+    color: gray;
+}
+
+.statusndate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskdate {
+    display: flex;
+    align-items:center;
+    font-size: 1.5vh;
+}
+
+/* Color of Text */
+.Yellowcolor {
+    color: yellow;
+}
+
+.Greencolor {
+    color: lime;
+}
+
+/* Mobile view Goes Here */
+@media screen and (max-width: 600px) {
+    .TasksContainer {
+        width: 90vw;
+        margin: 0vh;
+    }
+    .TasksContainer p:first-child {
+        font-size: 2vh;
+    }
+    .TasksContainer p:nth-child(n+2) {
+        font-size: 1.6vh;
+    }
+    .taskID{
+        font-size: 1vh;
+        display: none;
+    }
+    .taskdate{
+        font-size: 1vh;
+    }
+}

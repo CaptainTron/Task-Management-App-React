@@ -1,0 +1,31 @@
+.UpdateContainer{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.updatetaskheader{
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+    font-size: 3vh;
+    margin: 1vh 0 1vh 0;
+}
+
+@media screen and (max-width: 600px) {
+    .Updatesubmitbtn{
+        font-size: 1.5vh;
+        width: 25vw;
+    }
+
+
+
+}
+
+.formError{
+    color: red;
+    margin: 0;
+}

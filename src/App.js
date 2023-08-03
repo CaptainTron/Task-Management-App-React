@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { Link, NavLink } from 'react-router-dom';
 import './App.css';
-
+import TaskList from './Components/TaskList';
+import "./Components/UpdateTask/UpdateTask.css"
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='Task'>
+
+      <div className='createtaskcontainer'>
+        <p className='Headings'>My Task Manager</p>
+        <Link to="/createtask"><div className='CreateTaskbtn'><p className='CreateTasktxt'>+ Create New Task</p></div></Link>
+      </div>
+
+      <p className='Mytaskstxt'>My Tasks <span className='sidetextmytasts'>(Click on Task to edit)</span></p>
+      <div className='TaskContainer'>
+        <TaskList />
+      </div>
     </div>
   );
 }
